@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Restaurant Bill Generator</title>
+  <link rel="stylesheet" type="text/css" href="billstyle1.css">
+</head>
+<body>
+  	<br>
+	  <h1 style="text-align: center;">Restaurant Bill Generator</h1>
+	<div class="container">
+	<div class="div1 card shaodow">
+	<form class="bill1">
+		<br>
+		<h2><u>Menu</u></h2><br>
+		&emsp;&emsp;<b>ITEM&emsp;</b>
+		<select id="sf">
+			<option value="0">None</option>
+			<option value="Chicken555">Chicken 555</option>
+			<option value="DragonChicken">Dragon Chicken</option>
+			<option value="Chicken65">Chicken 65</option>
+			<option value="ChickenDum">Chicken Dum</option>
+			<option value="ChickenMughalai">Chicken Mughalai</option>
+			<option value="ChickenLollipop">Chicken Lollipop</option>
+			<option value="Thumbsup">Thumbs up</option>
+			<option value="Soda">Soda</option>
+			<option value="EnergyDrink">Energy Drink</option>
+			<option value="CheeseCake">Cheese Cake</option>
+			<option value="RedWalvetCake">Red Walvet Cake</option>
+			<option value="ChocolateCake">Chocolate Cake</option>
+		</select>
+    	<br><br><b>QUANTITY</b>&emsp;<input type="text" id="entrybox" pattern="\d*" placeholder="QUANTITY">&ensp;
+    	<br><br><input type="button" value="ADD T0 CART" class="mybutton" id="getme">
+	</form>
+	</div>
+	<br><br>
+	<div class="div2 card">
+		<h2><u>BILL</u></h2>
+	<textarea class="bill" cols="90" rows="12" id="writeme"></textarea>
+	<br>
+  	<input type="submit" value="RESET" class="mybutton bill3" id="clr">
+  	<input type="submit" value="PAY" class="mybutton bill2" id="out">
+  	<script src="billscript1.js"></script>
+</div>
+</div>
+</body>
+</html>
