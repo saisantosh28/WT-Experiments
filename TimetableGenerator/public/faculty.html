@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"href="style1.css">
+        <link rel="stylesheet"href="style3.css">
+    </head>
+    <body>
+      <header>
+        <a href="/home" class="heading"><h1>Faculty Login</h1></a>
+      </header>
+        <form action="/faculty" method="post">
+          <h2 style="font-size: 20px;">login</h2>
+          <div class="form-group">
+            <label for="username" class="faculty-label">Username:</label>
+            <input required="" name="fusername" id="username" type="text" class="faculty-input">
+          </div>
+          <div class="form-group">
+            <label for="password" class="faculty-label">Password:</label>
+            <input required="" name="fpassword" id="password" type="password" class="faculty-input">
+          </div>
+          <div class="form-group">
+            <input value="Login" type="submit" class="faculty-submit">
+          </div>
+          <p>Don't have an account? <a href="fregister.html">register here</a></p>
+        </form>        
+    </body>
+</html>

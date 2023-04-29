@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="style1.css">
+    <link rel="stylesheet"href="style3.css">
+  </head>
+  <body>
+    <header>
+    <a href="/home" class="heading"><h1>HOME</h1></a>
+    <a href="/faculty" class="btn">LOGOUT</a>
+  </header>
+    <h1 style="margin-top: 100px; text-align: center; margin-bottom: 20px;">Timetable</h1>
+    <table border="1" cellspacing="0" cellpadding="4">
+      <tr>
+        <th>Day</th>
+        <th>8:40-9:30</th>
+        <th>9:30-10:20</th>
+        <th>10:20-11:10</th>
+        <th>11:10-12:00</th>
+        <th>12:50-1:40</th>
+        <th>1:40-2:30</th>
+        <th>2:30-3:20</th>
+        <th>3:20-4:10</th>
+      </tr>
+      <tr>
+        <th>Monday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'Monday' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'Tuesday' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'Wednesday' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'Thursday' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'Friday' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+      <tr>
+        <th>Saturday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'Saturday' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+      </tr>
+    </table>
+  </body>
+</html>

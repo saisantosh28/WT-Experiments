@@ -1,0 +1,93 @@
+.custom-btn {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+   
+.btn-1 {
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+}
+   
+.btn-1:before {
+    height: 0%;
+    width: 2px;
+}
+   
+.btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+.login-card {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    box-shadow: 2px 2px 10px #ccc;
+}
+  
+.card-header {
+    text-align: center;
+    margin-bottom: 20px
+}
+  
+.card-header .log {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+}
+  
+.coordinate-form-group,.admin-form-group,.faculty-form-group{
+    margin-bottom: 15px;
+}
+  
+.coordinate-label,.admin-label,.faculty-label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.coordinate-input,.admin-input,.faculty-input{
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+  
+.coordinate-submit,.admin-submit,.faculty-submit {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.coordinate-submit:hover,.admin-submit:hover,.faculty-submit:hover {
+    background-color: #ccc;
+    color: black;
+  }

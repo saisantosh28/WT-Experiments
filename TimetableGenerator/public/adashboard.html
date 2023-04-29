@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"href="style1.css">
+       
+    </head>
+    <body>
+        <header>
+        <a href="/home" class="heading"><h1>HOME</h1></a>
+        <a href="/admin" class="btn">LOGOUT</a>
+        </header>
+        <form action="/adashboard" method="post" style="margin-top: 100px;">
+            <table>
+                <tr>
+                    <th colspan="2">Year:
+                        <select name="year">
+                            <option value="2">2nd</option>
+                            <option value="3">3rd</option>
+                            <option value="4">4th</option>
+                        </select>
+                    </th>
+                    <th colspan="2">Section:
+                        <select name="section">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr><th colspan="4" style="text-align: center;""><input type="submit" value="submit" style="width: 100px;"></th></tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+      <head>
+          <link rel="stylesheet" href="style1.css">
+          <style>
+              .container{
+                  margin: 100px;
+                  padding:20px;
+                  /* display: flex;*/
+                  justify-content:space-between; 
+                  /* flex-direction: column;  */
+                  box-shadow:  2px 1px 1px rgba(0, 0, 0, .2), 0 .5px .5px rgba(0, 0, 0, .2);
+              }
+              .a{
+                margin-bottom:-100px;
+                font-size:15px;
+                padding:-10px;
+                display:flex;
+                justify-content:space-between;
+              }
+              
+          </style>
+      </head>
+      <body>
+          <header>
+              
+              <a href="/home" ><h1>timetable</h1></a>
+              <div>
+              <a href="coordinate.html"><button class="btn btn-1">Coordinater Login</button></a>
+              <a href="admin.html"><button class="btn btn-1">  Admin Login  </button></a>
+              <a href="faculty.html"><button class="btn btn-1">  Faculty Login  </button></a>
+              </div>
+          </header>
+          <!--data-->
+          <div class="a container">
+          <h4 id="date"> ${d+"-"+m+"-"+y}</h4>  
+          <h4 id="day"> ${currentDay}</h4>         
+          <h4 id="clock"></h4>
+          </div>
+          <div class="container table-container">
+              <table>
+              <tr >
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+              </tr>
+              <tr>
+                <th>faculty</th>
+                <th>8:40-9:30</th>
+                <th>9:30-10:20</th>
+                <th>10:20-11:10</th>
+                <th>11:10-12:00</th>
+                <th>12:50-1:40</th>
+                <th>1:40-2:30</th>
+                <th>2:30-3:20</th>
+                <th>3:20-4:10</th>
+              </tr>
+              <tr>
+              <td>bosebabu stephen bosebabu</td>
+              <td>wt lab(3- cse)</td>
+                <td>wt lab(3rd cse)</td>
+              <td>wt lab(3rd cse)</td>
+              <td>wt lab(3rd cse)</td>
+              <td>wt lab(3rd cse)</td>
+              <td>wt lab(3rd cse)</td>
+              <td>wt lab(3rd cse)</td>
+              <td>wt lab(3rd cse)</td>
+              </tr>
+              
+              </table>
+          </div>
+          <script>
+          setInterval(Digitalclock,1000);
+          const date = new Date();
+          const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          const currentDay = days[date.getDay()];
+          const d=date.getDate();
+          const m=date.getMonth();
+          const y=date.getFullYear();
+          document.getElementById("day").innerHTML=currentDay;
+          document.getElementById("date").innerHTML=d+"-"+m+"-"+y;
+          function Digitalclock(){
+              var a=new Date();
+              var b=":";
+              let h=a.getHours();
+              let m=a.getMinutes();
+              let s=a.getSeconds();
+              let t=h+":"+m+":"+s;
+              document.getElementById("clock").innerHTML=t;
+          }    
+          Digitalclock();
+
+          </script>
+      </body>
+  </html>
